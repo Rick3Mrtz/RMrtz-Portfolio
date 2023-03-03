@@ -1,14 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../styles/Navbar.css';
-
-import logo from './assets/images/logo192.png'
+import {HiMenu} from 'react-icons/hi'
+import {FaReact} from 'react-icons/fa'
 
 function Navbar () {
+  const[nav, setNav] = useState(false)
+  const handleNav = () => {
+    setNav(!nav);
+  }
     return (
-        <nav className='navbar'>
+        <div className='absolute w-full flex justify-between p-4 items-center'>
+          <h1 className='text-white text-[2.2rem]'> <FaReact className='text-cyan-300' size={35} />Portfolio 
+          </h1>
+          <HiMenu onClick={handleNav} className='text-white z-20 cursor-pointer' size={33} />
+          <div className={nav ? 'fixed text-white right-0 top-0 w-1/5 md:w-1/5 sm:w-2/5 h-screen bg-black/80 py-6 flex-col z-10 ease-in-out duration-500' : 'absolute top-0 h-screen right-[100%] ease-in duration-500 z-10 hidden'}>
+            <ul className='flex flex-col fixed w-1/5 items-center justify-center'>
+              <li className='font-bold text-3xl p-6 cursor-pointer'>Home</li>
+              <li className='font-bold text-3xl p-6 cursor-pointer'>About Me</li>
+              <li className='font-bold text-3xl p-6 cursor-pointer'>Contact</li>
+            </ul>
+          </div>
+        </div>
+    )
+}
 
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+export default Navbar;
+
+
+{/* <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
     <a href="https://flowbite.com/" class="flex items-center">
         <img src={logo} class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
@@ -21,22 +41,16 @@ function Navbar () {
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">About Me</a>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">About Me</a>
         </li>
         <li>
           <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Resume</a>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 hover:text-red-700 md:p-0 ">Resume</a>
         </li>
         
       </ul>
     </div>
   </div>
-</nav>
-
-        </nav>
-    )
-}
-
-export default Navbar;
+</nav> */}

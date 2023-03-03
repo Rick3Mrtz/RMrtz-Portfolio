@@ -7,7 +7,7 @@ function Section () {
     return (
         <section className='section'>
             <div className='mx-[13rem] py-20'>
-                <div className=' grid grid-flow-row-dense grid-cols-3 gap-[4rem]'>
+                <div className=' grid grid-flow-row-dense grid-cols-3 gap-[4rem] md:grid-cols-2 lg:grid-cols-4'>
                     <div className='col-span-2 text-center text-white text-[5.5rem] leading-[7rem] bg-gradient-to-b from-purple-900 to-blue-400 rounded-full w-80 h-100'>
                         About Me 
                     </div>
