@@ -5,21 +5,18 @@ import '../styles/Section.css'
 
 function Section () {
     return (
-        <section className='section'>
-            <div className='mx-[13rem] py-20'>
-                <div className=' grid grid-flow-row-dense grid-cols-3 gap-[4rem] md:grid-cols-2 lg:grid-cols-4'>
-                    <div className='col-span-2 text-center text-white text-[5.5rem] leading-[7rem] bg-gradient-to-b from-purple-900 to-blue-400 rounded-full w-80 h-100'>
-                        About Me 
-                    </div>
-                    <div className='mt-12 text-[20px] text-center mx-2'>
-                        This is the About me section This is the About me section This is the About me section This is the About me section This is the About me section
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
+        <body class="flex flex-row h-[30vh]">
+        
+        <div class="flex-1 bg-white flex items-center justify-center">
+          <h1 class="text-purple-800 text-right text-[5rem] leading-[4.7rem] border-l-[1rem] border-b-[1rem] tracking-wider">Here is<br></br>a little <br></br>about<br></br><span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-red-400'>Myself</span></h1>
+        </div>
+        <div class="flex-1 bg-purple-800 flex items-center justify-center rounded-[4rem] shadow-2xl mr-10">
+          <h1 class="text-white text-center text-2xl mx-20">This is the about me section this is the about me section This is the about me section this is the about me section This is the about me section this is the about me section This is the about me section this is the about me section This is the about me section this is the about me section</h1>
+        </div>
+      </body>
+   
     )
 }
 
 export default Section;
+

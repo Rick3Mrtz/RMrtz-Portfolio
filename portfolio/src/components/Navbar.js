@@ -8,16 +8,21 @@ function Navbar () {
   const[nav, setNav] = useState(false)
   const handleNav = () => {
     setNav(!nav);
+    if(!nav) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'scroll'
+    }
   }
     return (
         <div className='absolute w-full flex justify-between p-4 items-center'>
-          <h1 className='text-white text-[2.2rem]'> <FaReact className='text-cyan-300' size={35} />Portfolio 
+          <h1 className='text-white text-[2.2rem]'> <FaReact className='text-cyan-300 inline-block mb-2 mr-3' size={35} />Portfolio 
           </h1>
-          <HiMenu onClick={handleNav} className='text-white z-20 cursor-pointer' size={33} />
-          <div className={nav ? 'fixed text-white right-0 top-0 w-1/5 md:w-1/5 sm:w-2/5 h-screen bg-black/80 py-6 flex-col z-10 ease-in-out duration-500' : 'absolute top-0 h-screen right-[100%] ease-in duration-500 z-10 hidden'}>
+          <HiMenu onClick={handleNav} className=' text-white z-20 cursor-pointer' size={33} />
+          <div className={nav ? 'hamburger fixed text-indigo-800 right-0 top-0 w-1/5 md:w-1/5 sm:w-2/5 h-screen bg-white/40 py-20 flex-col z-10 ease-in-out duration-500' : 'absolute top-0 h-screen ease-in duration-500 z-10 hidden'}>
             <ul className='flex flex-col fixed w-1/5 items-center justify-center'>
               <li className='font-bold text-3xl p-6 cursor-pointer'>Home</li>
-              <li className='font-bold text-3xl p-6 cursor-pointer'>About Me</li>
+              <li className='font-bold text-3xl p-6 cursor-pointer text-center'>About Me</li>
               <li className='font-bold text-3xl p-6 cursor-pointer'>Contact</li>
             </ul>
           </div>
