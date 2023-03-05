@@ -6,10 +6,17 @@ import { FaFacebookSquare } from 'react-icons/fa';
 import { AiOutlineMail} from 'react-icons/ai'
 
 
+
+
 function Contact () {
+
+ 
+
+
     return (
         <div>
-            <body class="flex flex-row h-[55vh] pt-24">
+          
+            <body id="contact-section" class="flex flex-row h-[55vh] pt-24">
         
        
         <div class="flex-1 bg-purple-800 flex items-center justify-center rounded-[4rem] shadow-2xl ml-40 max-w-[450px]">
