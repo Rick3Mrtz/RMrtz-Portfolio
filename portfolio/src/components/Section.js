@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { scrollTrigger } from 'gsap/ScrollTrigger';
+import {divRef} from './Education.js'
 
 import '../styles/Section.css'
 
 import { ScrollTrigger } from 'gsap/all';
+import Education from './Education';
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -18,11 +20,10 @@ function Section () {
       {
 
         x: 0,
-        duration: 3,
+        duration: 2,
         scrollTrigger: {
           trigger: el,
-          start: "top 55%"
-          
+          start: "top center",
         },
       }
     );

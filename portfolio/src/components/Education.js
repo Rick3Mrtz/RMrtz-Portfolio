@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useSt } from 'react';
 import { gsap } from 'gsap';
 import { scrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -19,7 +19,8 @@ function Education () {
         duration: 2,
         scrollTrigger: {
           trigger: el,
-          start: "top 70%"
+          start: "top 70%",
+          
         },
       }
       );
