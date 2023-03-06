@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rmrtz-portfolio/static/css/main.d78a7dcf.css",
-    "main.js": "/rmrtz-portfolio/static/js/main.06e58e3d.js",
-    "static/js/787.1ed0c42c.chunk.js": "/rmrtz-portfolio/static/js/787.1ed0c42c.chunk.js",
-    "index.html": "/rmrtz-portfolio/index.html",
-    "main.d78a7dcf.css.map": "/rmrtz-portfolio/static/css/main.d78a7dcf.css.map",
-    "main.06e58e3d.js.map": "/rmrtz-portfolio/static/js/main.06e58e3d.js.map",
-    "787.1ed0c42c.chunk.js.map": "/rmrtz-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/RMrtz-Portfolio/static/css/main.d78a7dcf.css",
+    "main.js": "/RMrtz-Portfolio/static/js/main.b70ca95f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/RMrtz-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "index.html": "/RMrtz-Portfolio/index.html",
+    "main.d78a7dcf.css.map": "/RMrtz-Portfolio/static/css/main.d78a7dcf.css.map",
+    "main.b70ca95f.js.map": "/RMrtz-Portfolio/static/js/main.b70ca95f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/RMrtz-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d78a7dcf.css",
-    "static/js/main.06e58e3d.js"
+    "static/js/main.b70ca95f.js"
   ]
 }
