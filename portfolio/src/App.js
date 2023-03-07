@@ -6,8 +6,7 @@ import Footer from '../src/components/Footer.js'
 import Space from './components/Space.js'
 import Contact from './components/Contact.js'
 import Education from './components/Education.js'
-import Reveal from './components/Reveal';
-
+import Background from './components/Background.js';
 
 function App() {
   return (
@@ -18,8 +17,9 @@ function App() {
       <Section />
       <Space />
       <Education />
-      <Space />
+     
       <Contact />
+      <Background />
       <Footer /> 
         
     </div>

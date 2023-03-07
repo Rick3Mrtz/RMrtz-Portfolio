@@ -1,8 +1,14 @@
 import React from 'react';
 
+
 function Space () {
+
+
+
+
     return (
-        <div className='bg-white py-12'>
+        <div className='bg-white py-8'>
+            
 
         </div>
     )
