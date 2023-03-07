@@ -32,11 +32,12 @@ function Header () {
             fromDev.kill();
         };
     }, []);
+    
 
 
     return (
         <header className='w-full h-screen'>
-            <img className='top-0 left-0 w-full h-screen object-cover' src='https://e1.pxfuel.com/desktop-wallpaper/183/423/desktop-wallpaper-mystical-stylised-lonely-mountain-vista-1920x1200-mystical-moonlight.jpg'></img>
+            <img className='top-0 left-0 w-full h-screen object-cover absolute' src='https://e1.pxfuel.com/desktop-wallpaper/183/423/desktop-wallpaper-mystical-stylised-lonely-mountain-vista-1920x1200-mystical-moonlight.jpg'></img>
             <div className='absolute top-0 w-full h-full flex flex-col justify-center text-white text-center'>
                 <div ref={myRef}>
                     <h1 className='text-7xl py-[16rem] drop-shadow-2xl md:text-8xl lg:text-9xl'>Welcome.</h1></div>

@@ -1,3 +1,23 @@
-/* .bg-image {
-    background: url(https://images.alphacoders.com/123/1239346.png);
+/* .body {
+    object-fit: cover;
+    position: fixed; 
+    height: 700px;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
 } */
+
+
+
+/* .background-image-1 {
+    background-image: url('../components/assets/images/background1.png');
+   height: 50vh;
+   width: 600px;
+   position: right;
+   object-fit: cover;
+  
+  }
+
+  .background-image-2 {
+    background-image: url('../components/assets/images/back2.png');
+  } */

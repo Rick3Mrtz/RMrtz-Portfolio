@@ -20,7 +20,7 @@ function App() {
      
       <Contact />
       <Background />
-      <Footer /> 
+      {/* <Footer />  */}
         
     </div>
   );
